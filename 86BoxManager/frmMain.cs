@@ -1786,7 +1786,7 @@ namespace _86boxManager
                 }
             }
 
-            lblVMCount.Text = "虚拟机数量: " + lstVMs.Items.Count + " | 运行: " + runningVMs + " | 暂停: " + pausedVMs + " | 等待中: " + waitingVMs + " | 关闭: " + stoppedVMs;
+            lblVMCount.Text = "虚拟机数量: " + lstVMs.Items.Count + " | 运行: " + runningVMs + " | 暂停: " + pausedVMs + " | 未响应: " + waitingVMs + " | 关闭: " + stoppedVMs;
         }
 
         private void openConfigFileToolStripMenuItem_Click(object sender, EventArgs e)

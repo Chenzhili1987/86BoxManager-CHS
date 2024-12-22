@@ -116,12 +116,12 @@ namespace _86boxManager
                 FileVersionInfo vi = FileVersionInfo.GetVersionInfo(txtEXEdir.Text + @"\86Box.exe");
                 if (vi.FilePrivatePart >= 3541) //Officially supported builds
                 {
-                    lbl86BoxVer1.Text = vi.FileMajorPart.ToString() + "." + vi.FileMinorPart.ToString() + "." + vi.FileBuildPart.ToString() + "." + vi.FilePrivatePart.ToString() + " - 完全兼容";
+                    lbl86BoxVer1.Text = vi.FileMajorPart.ToString() + "." + vi.FileMinorPart.ToString() + "." + vi.FileBuildPart.ToString() + "." + vi.FilePrivatePart.ToString() + " - fully compatible";
                     lbl86BoxVer1.ForeColor = Color.ForestGreen;
                 }
                 else if (vi.FilePrivatePart >= 3333 && vi.FilePrivatePart < 3541) //Should mostly work...
                 {
-                    lbl86BoxVer1.Text = vi.FileMajorPart.ToString() + "." + vi.FileMinorPart.ToString() + "." + vi.FileBuildPart.ToString() + "." + vi.FilePrivatePart.ToString() + " - 部分兼容";
+                    lbl86BoxVer1.Text = vi.FileMajorPart.ToString() + "." + vi.FileMinorPart.ToString() + "." + vi.FileBuildPart.ToString() + "." + vi.FilePrivatePart.ToString() + " - partially compatible";
                     lbl86BoxVer1.ForeColor = Color.Orange;
                 }
                 else //Completely unsupported, since version info can't be obtained anyway
@@ -130,7 +130,7 @@ namespace _86boxManager
                     lbl86BoxVer1.ForeColor = Color.Red;
                 }
             }
-            catch(FileNotFoundException)
+            catch(FileNotFoundException ex)
             {
                 lbl86BoxVer1.Text = "找不到 86Box.exe ";
                 lbl86BoxVer1.ForeColor = Color.Gray;
@@ -398,9 +398,9 @@ namespace _86boxManager
             Process.Start("https://github.com/Chenzhili1987/86BoxManager-CHS");
         }
 
-        private void lnkGithub2_LinkClicked(object sender, EventArgs e)
+        private void lnkGithub2_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            lnkGithub2.LinkVisited = true;
+            lnkGithub1.LinkVisited = true;
             Process.Start("https://github.com/86Box/86BoxManager");
         }
     }
