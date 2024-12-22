@@ -188,7 +188,7 @@ namespace _86boxManager
             // 
             // clmDesc
             // 
-            this.clmDesc.Text = "注释";
+            this.clmDesc.Text = "描述";
             this.clmDesc.Width = 144;
             // 
             // clmPath
