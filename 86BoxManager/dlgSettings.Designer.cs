@@ -1,4 +1,28 @@
-﻿namespace _86boxManager
+﻿/*
+MIT License
+
+Copyright (c) 2018-2022 David Simunič
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+*/
+
+namespace _86boxManager
 {
     partial class dlgSettings
     {
@@ -42,7 +66,7 @@
             this.cbxMinimizeTray = new System.Windows.Forms.CheckBox();
             this.cbxCloseTray = new System.Windows.Forms.CheckBox();
             this.cbxMinimize = new System.Windows.Forms.CheckBox();
-            this.gbxPaths = new System.Windows.Forms.GroupBox();
+            this.CopyrightD = new System.Windows.Forms.GroupBox();
             this.lbl86BoxVer1 = new System.Windows.Forms.Label();
             this.lbl86BoxVer = new System.Windows.Forms.Label();
             this.lblCFGdir = new System.Windows.Forms.Label();
@@ -59,25 +83,28 @@
             this.gbxMisc = new System.Windows.Forms.GroupBox();
             this.cbxGrid = new System.Windows.Forms.CheckBox();
             this.tabAbout = new System.Windows.Forms.TabPage();
-            this.lnkGithub = new System.Windows.Forms.LinkLabel();
+            this.lnkGithub1 = new System.Windows.Forms.LinkLabel();
             this.imgLogo = new System.Windows.Forms.PictureBox();
             this.lblVersion1 = new System.Windows.Forms.Label();
-            this.lnkGithub2 = new System.Windows.Forms.LinkLabel();
             this.lblCopyright = new System.Windows.Forms.Label();
             this.lblVersion = new System.Windows.Forms.Label();
             this.lblDesc = new System.Windows.Forms.Label();
             this.lblTitle = new System.Windows.Forms.Label();
+            this.tabDaviunic = new System.Windows.Forms.TabPage();
+            this.lnkGithub2 = new System.Windows.Forms.LinkLabel();
+            this.MIT_License_Copyright = new System.Windows.Forms.Label();
             this.toolTip = new System.Windows.Forms.ToolTip(this.components);
             this.pnlBottom.SuspendLayout();
             this.tbcSettings.SuspendLayout();
             this.tabGeneral.SuspendLayout();
             this.gbxBehaviour.SuspendLayout();
-            this.gbxPaths.SuspendLayout();
+            this.CopyrightD.SuspendLayout();
             this.tabAdvanced.SuspendLayout();
             this.gbxLogging.SuspendLayout();
             this.gbxMisc.SuspendLayout();
             this.tabAbout.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.imgLogo)).BeginInit();
+            this.tabDaviunic.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnApply
@@ -167,6 +194,7 @@
             this.tbcSettings.Controls.Add(this.tabGeneral);
             this.tbcSettings.Controls.Add(this.tabAdvanced);
             this.tbcSettings.Controls.Add(this.tabAbout);
+            this.tbcSettings.Controls.Add(this.tabDaviunic);
             this.tbcSettings.Location = new System.Drawing.Point(18, 18);
             this.tbcSettings.Margin = new System.Windows.Forms.Padding(5);
             this.tbcSettings.Name = "tbcSettings";
@@ -177,7 +205,7 @@
             // tabGeneral
             // 
             this.tabGeneral.Controls.Add(this.gbxBehaviour);
-            this.tabGeneral.Controls.Add(this.gbxPaths);
+            this.tabGeneral.Controls.Add(this.CopyrightD);
             this.tabGeneral.Location = new System.Drawing.Point(4, 37);
             this.tabGeneral.Margin = new System.Windows.Forms.Padding(5);
             this.tabGeneral.Name = "tabGeneral";
@@ -240,25 +268,23 @@
             this.cbxMinimize.UseVisualStyleBackColor = true;
             this.cbxMinimize.CheckedChanged += new System.EventHandler(this.cbx_CheckedChanged);
             // 
-            // gbxPaths
+            // CopyrightD
             // 
-            this.gbxPaths.Controls.Add(this.lbl86BoxVer1);
-            this.gbxPaths.Controls.Add(this.lbl86BoxVer);
-            this.gbxPaths.Controls.Add(this.lblCFGdir);
-            this.gbxPaths.Controls.Add(this.txtCFGdir);
-            this.gbxPaths.Controls.Add(this.txtEXEdir);
-            this.gbxPaths.Controls.Add(this.btnBrowse2);
-            this.gbxPaths.Controls.Add(this.lblEXEdir);
-            this.gbxPaths.Controls.Add(this.btnBrowse1);
-            this.gbxPaths.Location = new System.Drawing.Point(10, 10);
-            this.gbxPaths.Margin = new System.Windows.Forms.Padding(5);
-            this.gbxPaths.Name = "gbxPaths";
-            this.gbxPaths.Padding = new System.Windows.Forms.Padding(5);
-            this.gbxPaths.Size = new System.Drawing.Size(1003, 193);
-            this.gbxPaths.TabIndex = 5;
-            this.gbxPaths.TabStop = false;
-            this.gbxPaths.Text = "路径";
-            this.gbxPaths.Enter += new System.EventHandler(this.gbxPaths_Enter);
+            this.CopyrightD.Controls.Add(this.lbl86BoxVer1);
+            this.CopyrightD.Controls.Add(this.lbl86BoxVer);
+            this.CopyrightD.Controls.Add(this.lblCFGdir);
+            this.CopyrightD.Controls.Add(this.txtCFGdir);
+            this.CopyrightD.Controls.Add(this.txtEXEdir);
+            this.CopyrightD.Controls.Add(this.btnBrowse2);
+            this.CopyrightD.Controls.Add(this.lblEXEdir);
+            this.CopyrightD.Controls.Add(this.btnBrowse1);
+            this.CopyrightD.Location = new System.Drawing.Point(10, 10);
+            this.CopyrightD.Margin = new System.Windows.Forms.Padding(5);
+            this.CopyrightD.Name = "CopyrightD";
+            this.CopyrightD.Padding = new System.Windows.Forms.Padding(5);
+            this.CopyrightD.Size = new System.Drawing.Size(1003, 193);
+            this.CopyrightD.TabIndex = 5;
+            this.CopyrightD.TabStop = false;
             // 
             // lbl86BoxVer1
             // 
@@ -434,10 +460,9 @@
             // 
             // tabAbout
             // 
-            this.tabAbout.Controls.Add(this.lnkGithub);
+            this.tabAbout.Controls.Add(this.lnkGithub1);
             this.tabAbout.Controls.Add(this.imgLogo);
             this.tabAbout.Controls.Add(this.lblVersion1);
-            this.tabAbout.Controls.Add(this.lnkGithub2);
             this.tabAbout.Controls.Add(this.lblCopyright);
             this.tabAbout.Controls.Add(this.lblVersion);
             this.tabAbout.Controls.Add(this.lblDesc);
@@ -451,18 +476,18 @@
             this.tabAbout.Text = "关于";
             this.tabAbout.UseVisualStyleBackColor = true;
             // 
-            // lnkGithub
+            // lnkGithub1
             // 
-            this.lnkGithub.AutoSize = true;
-            this.lnkGithub.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.lnkGithub.Location = new System.Drawing.Point(23, 300);
-            this.lnkGithub.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
-            this.lnkGithub.Name = "lnkGithub";
-            this.lnkGithub.Size = new System.Drawing.Size(379, 28);
-            this.lnkGithub.TabIndex = 12;
-            this.lnkGithub.TabStop = true;
-            this.lnkGithub.Text = "https://github.com/86Box/86BoxManager";
-            this.lnkGithub.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lnkGithub_LinkClicked);
+            this.lnkGithub1.AutoSize = true;
+            this.lnkGithub1.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.lnkGithub1.Location = new System.Drawing.Point(23, 257);
+            this.lnkGithub1.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.lnkGithub1.Name = "lnkGithub1";
+            this.lnkGithub1.Size = new System.Drawing.Size(448, 28);
+            this.lnkGithub1.TabIndex = 12;
+            this.lnkGithub1.TabStop = true;
+            this.lnkGithub1.Text = "https://github.com/Chenzhili1987/86BoxManager";
+            this.lnkGithub1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lnkGithub1_LinkClicked);
             // 
             // imgLogo
             // 
@@ -486,19 +511,6 @@
             this.lblVersion1.TabIndex = 16;
             this.lblVersion1.Text = "<版本在这里>";
             // 
-            // lnkGithub2
-            // 
-            this.lnkGithub2.AutoSize = true;
-            this.lnkGithub2.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.lnkGithub2.Location = new System.Drawing.Point(23, 265);
-            this.lnkGithub2.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
-            this.lnkGithub2.Name = "lnkGithub2";
-            this.lnkGithub2.Size = new System.Drawing.Size(301, 28);
-            this.lnkGithub2.TabIndex = 10;
-            this.lnkGithub2.TabStop = true;
-            this.lnkGithub2.Text = "https://github.com/86Box/86Box";
-            this.lnkGithub2.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lnkGithub2_LinkClicked);
-            // 
             // lblCopyright
             // 
             this.lblCopyright.AutoSize = true;
@@ -508,7 +520,7 @@
             this.lblCopyright.Name = "lblCopyright";
             this.lblCopyright.Size = new System.Drawing.Size(492, 84);
             this.lblCopyright.TabIndex = 15;
-            this.lblCopyright.Text = "Copyright © 2018-2024 David Simunič\r\n根据麻省理工学院许可证获得许可。请参阅许可证文件\r\n许可证信息和作者列表。";
+            this.lblCopyright.Text = "Copyright © 2024 Chenzhili1987\r\n根据麻省理工学院许可证获得许可。请参阅许可证文件\r\n许可证信息和作者列表。";
             // 
             // lblVersion
             // 
@@ -544,6 +556,41 @@
             this.lblTitle.TabIndex = 11;
             this.lblTitle.Text = "86Box Manager";
             // 
+            // tabDaviunic
+            // 
+            this.tabDaviunic.Controls.Add(this.lnkGithub2);
+            this.tabDaviunic.Controls.Add(this.MIT_License_Copyright);
+            this.tabDaviunic.Location = new System.Drawing.Point(4, 37);
+            this.tabDaviunic.Name = "tabDaviunic";
+            this.tabDaviunic.Size = new System.Drawing.Size(1025, 354);
+            this.tabDaviunic.TabIndex = 3;
+            this.tabDaviunic.Text = "原MIT许可和版权";
+            this.tabDaviunic.UseVisualStyleBackColor = true;
+            // 
+            // lnkGithub2
+            // 
+            this.lnkGithub2.AutoSize = true;
+            this.lnkGithub2.Font = new System.Drawing.Font("Segoe UI", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lnkGithub2.Location = new System.Drawing.Point(0, 337);
+            this.lnkGithub2.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.lnkGithub2.Name = "lnkGithub2";
+            this.lnkGithub2.Size = new System.Drawing.Size(230, 15);
+            this.lnkGithub2.TabIndex = 17;
+            this.lnkGithub2.TabStop = true;
+            this.lnkGithub2.Text = "https://github.com/86Box/86BoxManager";
+            this.lnkGithub2.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lnkGithub2_LinkClicked);
+            // 
+            // MIT_License_Copyright
+            // 
+            this.MIT_License_Copyright.AutoSize = true;
+            this.MIT_License_Copyright.Font = new System.Drawing.Font("Segoe UI", 6F);
+            this.MIT_License_Copyright.Location = new System.Drawing.Point(0, 0);
+            this.MIT_License_Copyright.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.MIT_License_Copyright.Name = "MIT_License_Copyright";
+            this.MIT_License_Copyright.Size = new System.Drawing.Size(499, 315);
+            this.MIT_License_Copyright.TabIndex = 16;
+            this.MIT_License_Copyright.Text = resources.GetString("MIT_License_Copyright.Text");
+            // 
             // dlgSettings
             // 
             this.AcceptButton = this.btnOK;
@@ -571,8 +618,8 @@
             this.tabGeneral.ResumeLayout(false);
             this.gbxBehaviour.ResumeLayout(false);
             this.gbxBehaviour.PerformLayout();
-            this.gbxPaths.ResumeLayout(false);
-            this.gbxPaths.PerformLayout();
+            this.CopyrightD.ResumeLayout(false);
+            this.CopyrightD.PerformLayout();
             this.tabAdvanced.ResumeLayout(false);
             this.gbxLogging.ResumeLayout(false);
             this.gbxLogging.PerformLayout();
@@ -581,6 +628,8 @@
             this.tabAbout.ResumeLayout(false);
             this.tabAbout.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.imgLogo)).EndInit();
+            this.tabDaviunic.ResumeLayout(false);
+            this.tabDaviunic.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -599,7 +648,7 @@
         private System.Windows.Forms.CheckBox cbxMinimizeTray;
         private System.Windows.Forms.CheckBox cbxCloseTray;
         private System.Windows.Forms.CheckBox cbxMinimize;
-        private System.Windows.Forms.GroupBox gbxPaths;
+        private System.Windows.Forms.GroupBox CopyrightD;
         private System.Windows.Forms.Label lblCFGdir;
         private System.Windows.Forms.TextBox txtCFGdir;
         private System.Windows.Forms.TextBox txtEXEdir;
@@ -617,13 +666,15 @@
         private System.Windows.Forms.CheckBox cbxGrid;
         private System.Windows.Forms.GroupBox gbxLogging;
         private System.Windows.Forms.TabPage tabAbout;
-        private System.Windows.Forms.LinkLabel lnkGithub;
+        private System.Windows.Forms.LinkLabel lnkGithub1;
         private System.Windows.Forms.PictureBox imgLogo;
         private System.Windows.Forms.Label lblVersion1;
-        private System.Windows.Forms.LinkLabel lnkGithub2;
         private System.Windows.Forms.Label lblCopyright;
         private System.Windows.Forms.Label lblVersion;
         private System.Windows.Forms.Label lblDesc;
         private System.Windows.Forms.Label lblTitle;
+        private System.Windows.Forms.TabPage tabDaviunic;
+        private System.Windows.Forms.Label MIT_License_Copyright;
+        private System.Windows.Forms.LinkLabel lnkGithub2;
     }
 }
