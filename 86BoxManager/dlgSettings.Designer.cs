@@ -212,7 +212,7 @@ namespace _86boxManager
             this.tabGeneral.Padding = new System.Windows.Forms.Padding(5);
             this.tabGeneral.Size = new System.Drawing.Size(1025, 354);
             this.tabGeneral.TabIndex = 0;
-            this.tabGeneral.Text = "注释";
+            this.tabGeneral.Text = "常规";
             this.tabGeneral.UseVisualStyleBackColor = true;
             // 
             // gbxBehaviour
@@ -520,7 +520,7 @@ namespace _86boxManager
             this.lblCopyright.Name = "lblCopyright";
             this.lblCopyright.Size = new System.Drawing.Size(492, 84);
             this.lblCopyright.TabIndex = 15;
-            this.lblCopyright.Text = "版权所有 © 2024 ZhiliChen1987\r\n根据麻省理工学院许可证获得许可。请参阅许可证文件\r\n许可证信息和作者列表。";
+            this.lblCopyright.Text = "Copyright © 2024 Chenzhili1987\r\n根据麻省理工学院许可证获得许可。请参阅许可证文件\r\n许可证信息和作者列表。";
             // 
             // lblVersion
             // 
@@ -570,11 +570,11 @@ namespace _86boxManager
             // lnkGithub2
             // 
             this.lnkGithub2.AutoSize = true;
-            this.lnkGithub2.Font = new System.Drawing.Font("Segoe UI", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lnkGithub2.Font = new System.Drawing.Font("Segoe UI", 6.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lnkGithub2.Location = new System.Drawing.Point(0, 337);
             this.lnkGithub2.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.lnkGithub2.Name = "lnkGithub2";
-            this.lnkGithub2.Size = new System.Drawing.Size(230, 15);
+            this.lnkGithub2.Size = new System.Drawing.Size(248, 17);
             this.lnkGithub2.TabIndex = 17;
             this.lnkGithub2.TabStop = true;
             this.lnkGithub2.Text = "https://github.com/86Box/86BoxManager";

@@ -59,7 +59,7 @@ namespace _86boxManager
 
         public override string ToString()
         {
-            return "名字: " + Name + ", 注释: " + Desc + ", 路径: " + Path + ", 状态: " + Status;
+            return "名字: " + Name + ", 描述: " + Desc + ", 路径: " + Path + ", 状态: " + Status;
         }
 
         //Returns a lovely status string for use in UI
@@ -70,7 +70,7 @@ namespace _86boxManager
                 case STATUS_STOPPED: return "关闭";
                 case STATUS_RUNNING: return "运行";
                 case STATUS_PAUSED: return "暂停";
-                case STATUS_WAITING: return "未响应";
+                case STATUS_WAITING: return "等待中";
                 default: return "错误的状态";
             }
         }

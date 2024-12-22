@@ -148,7 +148,7 @@ namespace _86boxManager
             this.lblDesc.Name = "lblDesc";
             this.lblDesc.Size = new System.Drawing.Size(56, 28);
             this.lblDesc.TabIndex = 9;
-            this.lblDesc.Text = "注释:";
+            this.lblDesc.Text = "描述:";
             // 
             // txtName
             // 

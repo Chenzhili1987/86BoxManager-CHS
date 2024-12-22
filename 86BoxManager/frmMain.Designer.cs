@@ -123,7 +123,7 @@ namespace _86boxManager
             this.btnDelete.Location = new System.Drawing.Point(163, 18);
             this.btnDelete.Margin = new System.Windows.Forms.Padding(5);
             this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(90, 46);
+            this.btnDelete.Size = new System.Drawing.Size(71, 46);
             this.btnDelete.TabIndex = 2;
             this.btnDelete.Text = "删除";
             this.toolTip.SetToolTip(this.btnDelete, "删除该虚拟机");
@@ -184,12 +184,12 @@ namespace _86boxManager
             // clmStatus
             // 
             this.clmStatus.Text = "状态";
-            this.clmStatus.Width = 107;
+            this.clmStatus.Width = 125;
             // 
             // clmDesc
             // 
-            this.clmDesc.Text = "注释";
-            this.clmDesc.Width = 144;
+            this.clmDesc.Text = "描述";
+            this.clmDesc.Width = 161;
             // 
             // clmPath
             // 
@@ -351,7 +351,7 @@ namespace _86boxManager
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(60, 46);
             this.btnAdd.TabIndex = 0;
-            this.btnAdd.Text = "添加";
+            this.btnAdd.Text = "新建";
             this.toolTip.SetToolTip(this.btnAdd, "添加新的或现有的虚拟机");
             this.btnAdd.UseVisualStyleBackColor = true;
             this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
@@ -495,10 +495,10 @@ namespace _86boxManager
             this.btnSettings.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnSettings.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.btnSettings.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.btnSettings.Location = new System.Drawing.Point(911, 18);
+            this.btnSettings.Location = new System.Drawing.Point(929, 18);
             this.btnSettings.Margin = new System.Windows.Forms.Padding(5);
             this.btnSettings.Name = "btnSettings";
-            this.btnSettings.Size = new System.Drawing.Size(97, 46);
+            this.btnSettings.Size = new System.Drawing.Size(79, 46);
             this.btnSettings.TabIndex = 8;
             this.btnSettings.Text = "设置";
             this.toolTip.SetToolTip(this.btnSettings, "打开 86Box Manager 设置");
