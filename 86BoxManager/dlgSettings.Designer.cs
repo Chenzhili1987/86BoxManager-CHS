@@ -483,10 +483,10 @@ namespace _86boxManager
             this.lnkGithub1.Location = new System.Drawing.Point(23, 257);
             this.lnkGithub1.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.lnkGithub1.Name = "lnkGithub1";
-            this.lnkGithub1.Size = new System.Drawing.Size(448, 28);
+            this.lnkGithub1.Size = new System.Drawing.Size(493, 28);
             this.lnkGithub1.TabIndex = 12;
             this.lnkGithub1.TabStop = true;
-            this.lnkGithub1.Text = "https://github.com/Chenzhili1987/86BoxManager";
+            this.lnkGithub1.Text = "https://github.com/Chenzhili1987/86BoxManager-CHS";
             this.lnkGithub1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lnkGithub1_LinkClicked);
             // 
             // imgLogo
