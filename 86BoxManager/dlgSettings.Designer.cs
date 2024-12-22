@@ -520,7 +520,7 @@ namespace _86boxManager
             this.lblCopyright.Name = "lblCopyright";
             this.lblCopyright.Size = new System.Drawing.Size(492, 84);
             this.lblCopyright.TabIndex = 15;
-            this.lblCopyright.Text = "Copyright © 2024 ZhiliChen1987\r\n根据麻省理工学院许可证获得许可。请参阅许可证文件\r\n许可证信息和作者列表。";
+            this.lblCopyright.Text = "版权所有 © 2024 ZhiliChen1987\r\n根据麻省理工学院许可证获得许可。请参阅许可证文件\r\n许可证信息和作者列表。";
             // 
             // lblVersion
             // 
