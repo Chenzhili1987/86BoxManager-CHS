@@ -92,8 +92,8 @@ namespace _86boxManager
             this.lblTitle = new System.Windows.Forms.Label();
             this.tabDaviunic = new System.Windows.Forms.TabPage();
             this.lnkGithub2 = new System.Windows.Forms.LinkLabel();
-            this.MIT_License_Copyright = new System.Windows.Forms.Label();
             this.toolTip = new System.Windows.Forms.ToolTip(this.components);
+            this.MIT_License_Copyright = new System.Windows.Forms.TextBox();
             this.pnlBottom.SuspendLayout();
             this.tbcSettings.SuspendLayout();
             this.tabGeneral.SuspendLayout();
@@ -405,9 +405,9 @@ namespace _86boxManager
             this.cbxLogging.Location = new System.Drawing.Point(13, 35);
             this.cbxLogging.Margin = new System.Windows.Forms.Padding(2);
             this.cbxLogging.Name = "cbxLogging";
-            this.cbxLogging.Size = new System.Drawing.Size(314, 33);
+            this.cbxLogging.Size = new System.Drawing.Size(315, 33);
             this.cbxLogging.TabIndex = 9;
-            this.cbxLogging.Text = "启用 86Box 记录到文件的日志";
+            this.cbxLogging.Text = "启用保存为文件的 86box 日志";
             this.cbxLogging.UseVisualStyleBackColor = true;
             this.cbxLogging.CheckedChanged += new System.EventHandler(this.cbxLogging_CheckedChanged);
             // 
@@ -558,8 +558,8 @@ namespace _86boxManager
             // 
             // tabDaviunic
             // 
-            this.tabDaviunic.Controls.Add(this.lnkGithub2);
             this.tabDaviunic.Controls.Add(this.MIT_License_Copyright);
+            this.tabDaviunic.Controls.Add(this.lnkGithub2);
             this.tabDaviunic.Location = new System.Drawing.Point(4, 37);
             this.tabDaviunic.Name = "tabDaviunic";
             this.tabDaviunic.Size = new System.Drawing.Size(1025, 354);
@@ -570,11 +570,11 @@ namespace _86boxManager
             // lnkGithub2
             // 
             this.lnkGithub2.AutoSize = true;
-            this.lnkGithub2.Font = new System.Drawing.Font("Segoe UI", 6.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lnkGithub2.Location = new System.Drawing.Point(0, 337);
+            this.lnkGithub2.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.lnkGithub2.Location = new System.Drawing.Point(-2, 326);
             this.lnkGithub2.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.lnkGithub2.Name = "lnkGithub2";
-            this.lnkGithub2.Size = new System.Drawing.Size(248, 17);
+            this.lnkGithub2.Size = new System.Drawing.Size(379, 28);
             this.lnkGithub2.TabIndex = 17;
             this.lnkGithub2.TabStop = true;
             this.lnkGithub2.Text = "https://github.com/86Box/86BoxManager";
@@ -582,14 +582,14 @@ namespace _86boxManager
             // 
             // MIT_License_Copyright
             // 
-            this.MIT_License_Copyright.AutoSize = true;
-            this.MIT_License_Copyright.Font = new System.Drawing.Font("Segoe UI", 6F);
-            this.MIT_License_Copyright.Location = new System.Drawing.Point(0, 0);
-            this.MIT_License_Copyright.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.MIT_License_Copyright.Location = new System.Drawing.Point(0, 3);
+            this.MIT_License_Copyright.Multiline = true;
             this.MIT_License_Copyright.Name = "MIT_License_Copyright";
-            this.MIT_License_Copyright.Size = new System.Drawing.Size(499, 315);
-            this.MIT_License_Copyright.TabIndex = 16;
+            this.MIT_License_Copyright.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.MIT_License_Copyright.Size = new System.Drawing.Size(1022, 320);
+            this.MIT_License_Copyright.TabIndex = 18;
             this.MIT_License_Copyright.Text = resources.GetString("MIT_License_Copyright.Text");
+            this.MIT_License_Copyright.WordWrap = false;
             // 
             // dlgSettings
             // 
@@ -674,7 +674,7 @@ namespace _86boxManager
         private System.Windows.Forms.Label lblDesc;
         private System.Windows.Forms.Label lblTitle;
         private System.Windows.Forms.TabPage tabDaviunic;
-        private System.Windows.Forms.Label MIT_License_Copyright;
         private System.Windows.Forms.LinkLabel lnkGithub2;
+        private System.Windows.Forms.TextBox MIT_License_Copyright;
     }
 }

@@ -204,7 +204,7 @@ namespace _86boxManager
                 //If the key doesn't exist yet, fallback to defaults
                 if (regkey == null)
                 {
-                    MessageBox.Show("86Box Manager设置无法加载。如果您是第一次运行 86Box Manager, 这是正常的, 将加载默认设置。", "警告", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    MessageBox.Show("86Box Manager设置无法加载。如果您是第一次运行 86Box Manager , 这是正常的, 将加载默认设置。", "警告", MessageBoxButtons.OK, MessageBoxIcon.Warning);
 
                     //Create the key and reopen it for write access
                     Registry.CurrentUser.CreateSubKey(@"SOFTWARE\86Box");
