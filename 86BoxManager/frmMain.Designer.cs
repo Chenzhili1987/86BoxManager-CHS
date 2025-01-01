@@ -178,7 +178,7 @@ namespace _86boxManager
             // 
             // clmName
             // 
-            this.clmName.Text = "名字";
+            this.clmName.Text = "名称";
             this.clmName.Width = 184;
             // 
             // clmStatus
