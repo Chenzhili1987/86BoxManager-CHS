@@ -100,7 +100,7 @@ namespace _86boxManager
             this.lblName.Name = "lblName";
             this.lblName.Size = new System.Drawing.Size(56, 28);
             this.lblName.TabIndex = 2;
-            this.lblName.Text = "名字:";
+            this.lblName.Text = "名称:";
             // 
             // lblDesc
             // 

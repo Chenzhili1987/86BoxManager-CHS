@@ -21,29 +21,6 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 */
-/*
-MIT License
-
-Copyright (c) 2018-2022 David Simunič
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
-*/
 
 namespace _86boxManager
 {
@@ -101,7 +78,7 @@ namespace _86boxManager
             this.cbxOpenCFG.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.cbxOpenCFG.Location = new System.Drawing.Point(352, 266);
             this.cbxOpenCFG.Name = "cbxOpenCFG";
-            this.cbxOpenCFG.Size = new System.Drawing.Size(197, 33);
+            this.cbxOpenCFG.Size = new System.Drawing.Size(210, 33);
             this.cbxOpenCFG.TabIndex = 6;
             this.cbxOpenCFG.Text = "立即配置该虚拟机";
             this.cbxOpenCFG.UseVisualStyleBackColor = true;
@@ -139,7 +116,7 @@ namespace _86boxManager
             this.lblName.Name = "lblName";
             this.lblName.Size = new System.Drawing.Size(56, 28);
             this.lblName.TabIndex = 8;
-            this.lblName.Text = "名字:";
+            this.lblName.Text = "名称:";
             // 
             // lblDesc
             // 
@@ -194,7 +171,7 @@ namespace _86boxManager
             this.cbxStartVM.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.cbxStartVM.Location = new System.Drawing.Point(22, 266);
             this.cbxStartVM.Name = "cbxStartVM";
-            this.cbxStartVM.Size = new System.Drawing.Size(197, 33);
+            this.cbxStartVM.Size = new System.Drawing.Size(210, 33);
             this.cbxStartVM.TabIndex = 5;
             this.cbxStartVM.Text = "立即启动该虚拟机";
             this.cbxStartVM.UseVisualStyleBackColor = true;
@@ -236,7 +213,7 @@ namespace _86boxManager
             this.cbxImport.Location = new System.Drawing.Point(22, 18);
             this.cbxImport.Margin = new System.Windows.Forms.Padding(4);
             this.cbxImport.Name = "cbxImport";
-            this.cbxImport.Size = new System.Drawing.Size(251, 33);
+            this.cbxImport.Size = new System.Drawing.Size(294, 33);
             this.cbxImport.TabIndex = 0;
             this.cbxImport.Text = "从以下位置导入虚拟机文件:";
             this.cbxImport.UseVisualStyleBackColor = true;

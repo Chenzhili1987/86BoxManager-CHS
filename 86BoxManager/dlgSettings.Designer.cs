@@ -91,9 +91,9 @@ namespace _86boxManager
             this.lblDesc = new System.Windows.Forms.Label();
             this.lblTitle = new System.Windows.Forms.Label();
             this.tabDaviunic = new System.Windows.Forms.TabPage();
+            this.MIT_License_Copyright = new System.Windows.Forms.TextBox();
             this.lnkGithub2 = new System.Windows.Forms.LinkLabel();
             this.toolTip = new System.Windows.Forms.ToolTip(this.components);
-            this.MIT_License_Copyright = new System.Windows.Forms.TextBox();
             this.pnlBottom.SuspendLayout();
             this.tbcSettings.SuspendLayout();
             this.tabGeneral.SuspendLayout();
@@ -405,9 +405,9 @@ namespace _86boxManager
             this.cbxLogging.Location = new System.Drawing.Point(13, 35);
             this.cbxLogging.Margin = new System.Windows.Forms.Padding(2);
             this.cbxLogging.Name = "cbxLogging";
-            this.cbxLogging.Size = new System.Drawing.Size(315, 33);
+            this.cbxLogging.Size = new System.Drawing.Size(319, 33);
             this.cbxLogging.TabIndex = 9;
-            this.cbxLogging.Text = "启用保存为文件的 86box 日志";
+            this.cbxLogging.Text = "启用保存为文件的 86box 日志:";
             this.cbxLogging.UseVisualStyleBackColor = true;
             this.cbxLogging.CheckedChanged += new System.EventHandler(this.cbxLogging_CheckedChanged);
             // 
@@ -567,6 +567,17 @@ namespace _86boxManager
             this.tabDaviunic.Text = "原MIT许可和版权";
             this.tabDaviunic.UseVisualStyleBackColor = true;
             // 
+            // MIT_License_Copyright
+            // 
+            this.MIT_License_Copyright.Location = new System.Drawing.Point(0, 3);
+            this.MIT_License_Copyright.Multiline = true;
+            this.MIT_License_Copyright.Name = "MIT_License_Copyright";
+            this.MIT_License_Copyright.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.MIT_License_Copyright.Size = new System.Drawing.Size(1022, 320);
+            this.MIT_License_Copyright.TabIndex = 18;
+            this.MIT_License_Copyright.Text = resources.GetString("MIT_License_Copyright.Text");
+            this.MIT_License_Copyright.WordWrap = false;
+            // 
             // lnkGithub2
             // 
             this.lnkGithub2.AutoSize = true;
@@ -579,17 +590,6 @@ namespace _86boxManager
             this.lnkGithub2.TabStop = true;
             this.lnkGithub2.Text = "https://github.com/86Box/86BoxManager";
             this.lnkGithub2.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lnkGithub2_LinkClicked);
-            // 
-            // MIT_License_Copyright
-            // 
-            this.MIT_License_Copyright.Location = new System.Drawing.Point(0, 3);
-            this.MIT_License_Copyright.Multiline = true;
-            this.MIT_License_Copyright.Name = "MIT_License_Copyright";
-            this.MIT_License_Copyright.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.MIT_License_Copyright.Size = new System.Drawing.Size(1022, 320);
-            this.MIT_License_Copyright.TabIndex = 18;
-            this.MIT_License_Copyright.Text = resources.GetString("MIT_License_Copyright.Text");
-            this.MIT_License_Copyright.WordWrap = false;
             // 
             // dlgSettings
             // 
