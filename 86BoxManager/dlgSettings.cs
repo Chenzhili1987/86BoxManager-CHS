@@ -48,7 +48,7 @@ namespace _86boxManager
             lblVersion1.Text = Application.ProductVersion.Substring(0, Application.ProductVersion.Length - 2);
 
             #if DEBUG
-                lblVersion1.Text += " (Debug)";
+                lblVersion1.Text += " (调试)";
             #endif
         }
 
