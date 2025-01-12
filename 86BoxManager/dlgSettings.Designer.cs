@@ -569,9 +569,11 @@ namespace _86boxManager
             // 
             // MIT_License_Copyright
             // 
+            this.MIT_License_Copyright.BackColor = System.Drawing.SystemColors.Window;
             this.MIT_License_Copyright.Location = new System.Drawing.Point(0, 3);
             this.MIT_License_Copyright.Multiline = true;
             this.MIT_License_Copyright.Name = "MIT_License_Copyright";
+            this.MIT_License_Copyright.ReadOnly = true;
             this.MIT_License_Copyright.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.MIT_License_Copyright.Size = new System.Drawing.Size(1022, 320);
             this.MIT_License_Copyright.TabIndex = 18;

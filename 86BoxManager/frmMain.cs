@@ -1670,14 +1670,18 @@ namespace _86boxManager
                     }
                     try
                     {
-                        Directory.Delete(vm.Path, true);
-                        Directory.CreateDirectory(vm.Path);
+                        System.IO.File.Delete(vm.Path + @"\86box.cfg");
+                        if (Directory.Exists(vm.Path + @"\nvr"))
+                        {
+                            Directory.Delete(vm.Path + @"\nvr", true);
+                        }
                         System.IO.File.WriteAllText(vm.Path + @"\86box.cfg", "[General]\r\nvid_renderer = qt_software\r\nemu_build_num = 6130\r\nlanguage = zh-CN\r\nopen_dir_usr_path = 1\r\n\r\n[Machine]\r\nmachine = ibmpc\r\ncpu_family = 8088\r\ncpu_speed = 4772728\r\ncpu_multi = 1\r\ncpu_use_dynarec = 0\r\nfpu_softfloat = 0\r\ntime_sync = local\r\nmem_size = 64\r\n\r\n[Video]\r\ngfxcard = cga\r\n\r\n[Input devices]\r\nmouse_type = none\r\n\r\n[Sound]\r\nfm_driver = nuked\r\n\r\n[Network]\r\nnet_01_link = 0\r\nnet_02_link = 0\r\nnet_03_link = 0\r\nnet_04_link = 0\r\n\r\n[Storage controllers]\r\nfdc = none\r\nhdc = none\r\ncassette_enabled = 1\r\ncassette_mode = load\r\n");
                         MessageBox.Show("\"" + vm.Name + "\" 虚拟机已成功抹除", "结束", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     }
                     catch (Exception)
                     {
-                        MessageBox.Show("尝试抹除 \"" + vm.Name + "\" 虚拟机时出错。", "错误", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        MessageBox.Show("尝试抹除 \"" + vm.Name + "\" 虚拟机时出错，将使用默认配置", "错误", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        System.IO.File.WriteAllText(vm.Path + @"\86box.cfg", "[General]\r\nvid_renderer = qt_software\r\nemu_build_num = 6130\r\nlanguage = zh-CN\r\nopen_dir_usr_path = 1\r\n\r\n[Machine]\r\nmachine = ibmpc\r\ncpu_family = 8088\r\ncpu_speed = 4772728\r\ncpu_multi = 1\r\ncpu_use_dynarec = 0\r\nfpu_softfloat = 0\r\ntime_sync = local\r\nmem_size = 64\r\n\r\n[Video]\r\ngfxcard = cga\r\n\r\n[Input devices]\r\nmouse_type = none\r\n\r\n[Sound]\r\nfm_driver = nuked\r\n\r\n[Network]\r\nnet_01_link = 0\r\nnet_02_link = 0\r\nnet_03_link = 0\r\nnet_04_link = 0\r\n\r\n[Storage controllers]\r\nfdc = none\r\nhdc = none\r\ncassette_enabled = 1\r\ncassette_mode = load\r\n");
                         continue;
                     }
                 }
